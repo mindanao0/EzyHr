@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-30T20:42:20.996747" rpa="false" schemaversion="5">
+<suite id="s1" name="LeaveTestcase" source="C:\Code\AutomationTestLoginpageAndRegisterpageOfFutureSkill-main\testcase\LeaveTestcase.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-11-30T20:42:21.215549" level="INFO">Opening browser 'chrome' to base url 'https://ezyhr3.d.orisma.com/login'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-30T20:42:21.215328" elapsed="4.042320"/>
+</kw>
+<test id="s1-t1" name="As a user, I want to login success with valid credential" line="15">
+<kw name="User Select Leave Type And Submit Leave Request" owner="leaveKeyword">
+<kw name="Wait Until Element Is Ready Then Input Text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:42:25.259827" level="INFO">Typing text '544nutdanai0412@gmail.com' into text field 'name=username'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:42:25.259393" elapsed="0.087271"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:42:25.259169" elapsed="0.087607"/>
+</kw>
+<arg>name=username</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2025-11-30T20:42:25.258868" elapsed="0.088009"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Click Element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:42:25.347719" level="INFO">Clicking element 'id=btn_next_login'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:42:25.347549" elapsed="0.049451"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:42:25.347353" elapsed="0.049734"/>
+</kw>
+<arg>id=btn_next_login</arg>
+<status status="PASS" start="2025-11-30T20:42:25.347071" elapsed="0.050098"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Input Text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:42:25.397992" level="INFO">Typing text 'Test1234!' into text field 'name=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:42:25.397798" elapsed="0.079089"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:42:25.397607" elapsed="0.079385"/>
+</kw>
+<arg>name=password</arg>
+<arg>${valid_password}</arg>
+<status status="PASS" start="2025-11-30T20:42:25.397313" elapsed="0.079774"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Click Element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:42:25.477969" level="INFO">Clicking element 'id=btn_login'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:42:25.477759" elapsed="0.172967"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:42:25.477540" elapsed="0.173282"/>
+</kw>
+<arg>id=btn_login</arg>
+<status status="PASS" start="2025-11-30T20:42:25.477249" elapsed="0.173650"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T20:42:35.651867" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T20:42:25.651011" elapsed="10.001253"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Click Element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:42:35.656296" level="INFO">Clicking element 'xpath=//button[@class='confirm']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:42:35.655409" elapsed="0.047968"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:42:35.654401" elapsed="0.049065"/>
+</kw>
+<arg>xpath=//button[@class='confirm']</arg>
+<status status="PASS" start="2025-11-30T20:42:35.653071" elapsed="0.050471"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Click Element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:42:35.704265" level="INFO">Clicking element 'id=create-new-button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:42:35.704106" elapsed="0.168052"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:42:35.703926" elapsed="0.168317"/>
+</kw>
+<arg>id=create-new-button</arg>
+<status status="PASS" start="2025-11-30T20:42:35.703681" elapsed="0.168636"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T20:42:45.872857" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T20:42:35.872428" elapsed="10.000827"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Click Element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:42:45.877245" level="INFO">Clicking element 'xpath=//div[@class='btn-icon' and @onclick="openCreateNewRequest('leave')"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:42:45.876382" elapsed="0.047824"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:42:45.875378" elapsed="0.048957"/>
+</kw>
+<arg>xpath=//div[@class='btn-icon' and @onclick="openCreateNewRequest('leave')"]</arg>
+<status status="PASS" start="2025-11-30T20:42:45.874065" elapsed="0.050350"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T20:42:50.925205" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T20:42:45.924566" elapsed="5.000735"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Input Text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:42:50.926157" level="INFO">Typing text 'กำเเเพง Rose' into text field 'xpath=//input[@class='form_input required']'.</msg>
+<msg time="2025-11-30T20:42:53.635168" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-318.png"&gt;&lt;img src="selenium-screenshot-318.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-30T20:42:53.635365" level="FAIL">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff67385a235
+	0x7ff6735b2630
+	0x7ff6733414e5
+	0x7ff67338f7f6
+	0x7ff6733c2b0a
+	0x7ff67338cc36
+	0x7ff6733ebaba
+	0x7ff67338b0ed
+	0x7ff67338bf63
+	0x7ff673885d60
+	0x7ff67387fe8a
+	0x7ff6738a1005
+	0x7ff6735cd71e
+	0x7ff6735d4e1f
+	0x7ff6735bb7c4
+	0x7ff6735bb97f
+	0x7ff6735a18e8
+	0x7ff87f1d7374
+	0x7ff880f5cc91
+</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-11-30T20:42:50.925944" elapsed="2.712268">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff67385a235
+	0x7ff6735b2630
+	0x7ff6733414e5
+	0x7ff67338f7f6
+	0x7ff6733c2b0a
+	0x7ff67338cc36
+	0x7ff6733ebaba
+	0x7ff67338b0ed
+	0x7ff67338bf63
+	0x7ff673885d60
+	0x7ff67387fe8a
+	0x7ff6738a1005
+	0x7ff6735cd71e
+	0x7ff6735d4e1f
+	0x7ff6735bb7c4
+	0x7ff6735bb97f
+	0x7ff6735a18e8
+	0x7ff87f1d7374
+	0x7ff880f5cc91
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:42:55.640550" level="INFO">Typing text 'กำเเเพง Rose' into text field 'xpath=//input[@class='form_input required']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:42:55.639395" elapsed="0.072071"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:42:50.925766" elapsed="4.785787"/>
+</kw>
+<arg>xpath=//input[@class='form_input required']</arg>
+<arg>${department}</arg>
+<status status="PASS" start="2025-11-30T20:42:50.925472" elapsed="4.786159"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T20:43:00.712037" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T20:42:55.711744" elapsed="5.000382"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Input Text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:43:00.712925" level="INFO">Typing text 'กัลยาณี พรมรักษา' into text field 'xpath=(//input[@class='form_input' and @type='text'])[2]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:43:00.712744" elapsed="0.056676"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:43:00.712568" elapsed="0.056942"/>
+</kw>
+<arg>xpath=(//input[@class='form_input' and @type='text'])[2]</arg>
+<arg>${requester}</arg>
+<status status="PASS" start="2025-11-30T20:43:00.712286" elapsed="0.057303"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T20:43:05.770631" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T20:43:00.769700" elapsed="5.001023"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Click Element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:43:05.771484" level="INFO">Clicking element 'xpath=(//label[@class='form_input have_date'])[1]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:43:05.771317" elapsed="0.047939"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:43:05.771136" elapsed="0.048206"/>
+</kw>
+<arg>xpath=(//label[@class='form_input have_date'])[1]</arg>
+<status status="PASS" start="2025-11-30T20:43:05.770885" elapsed="0.048536"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T20:43:10.820027" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T20:43:05.819530" elapsed="5.000882"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Click Element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:43:10.824387" level="INFO">Clicking element 'xpath=//div[@class='left_side' and text()='ลาป่วย']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:43:10.823531" elapsed="0.049954"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:43:10.822528" elapsed="0.051040"/>
+</kw>
+<arg>xpath=//div[@class='left_side' and text()='ลาป่วย']</arg>
+<status status="PASS" start="2025-11-30T20:43:10.821204" elapsed="0.052438"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T20:43:15.874546" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T20:43:10.873754" elapsed="5.001176"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Input Text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:43:15.879217" level="INFO">Typing text 'ขออนุญาตลาป่วย' into text field 'xpath=//textarea[@id='comment']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:43:15.878215" elapsed="0.052928"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:43:15.877214" elapsed="0.054019"/>
+</kw>
+<arg>xpath=//textarea[@id='comment']</arg>
+<arg>${comment}</arg>
+<status status="PASS" start="2025-11-30T20:43:15.875710" elapsed="0.055602"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T20:43:20.931809" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T20:43:15.931424" elapsed="5.000777"/>
+</kw>
+<kw name="Wait Until Element Is Ready Then Click Element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-30T20:43:20.936101" level="INFO">Clicking element 'xpath=//span[@class='hide-xs' and text()='ส่งคำขอ']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-30T20:43:20.935246" elapsed="0.051953"/>
+</kw>
+<arg>10s</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-11-30T20:43:20.934260" elapsed="0.053036"/>
+</kw>
+<arg>xpath=//span[@class='hide-xs' and text()='ส่งคำขอ']</arg>
+<status status="PASS" start="2025-11-30T20:43:20.932975" elapsed="0.054465"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T20:43:30.987927" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T20:43:20.987609" elapsed="10.000831"/>
+</kw>
+<arg>${email}</arg>
+<arg>${valid_password}</arg>
+<arg>${department}</arg>
+<arg>${requester}</arg>
+<arg>${comment}</arg>
+<status status="PASS" start="2025-11-30T20:42:25.258428" elapsed="65.730442"/>
+</kw>
+<status status="PASS" start="2025-11-30T20:42:25.257816" elapsed="65.732422"/>
+</test>
+<status status="PASS" start="2025-11-30T20:42:20.998038" elapsed="69.995230"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="LeaveTestcase" id="s1" pass="1" fail="0" skip="0">LeaveTestcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
